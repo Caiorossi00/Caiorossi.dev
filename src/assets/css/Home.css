@@ -6,6 +6,7 @@
   width: 100vw;
   background-image: url("../images/home-bg.png");
   background-repeat: no-repeat;
+  background-size: cover; /* Adicionado para garantir que a imagem cubra toda a tela */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,6 +18,8 @@
 
 .inner-home {
   background-image: url("../images/home-inner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   object-fit: cover;
   width: 100%;
   max-width: 70%;
@@ -28,6 +31,7 @@
   gap: 2em;
   justify-content: space-between;
   min-height: 460px;
+  box-sizing: border-box;
 }
 
 .left-home,
@@ -84,7 +88,9 @@
 @media screen and (max-width: 768px) {
   .inner-home {
     padding: 2em;
-    height: 70vh;
+    max-width: 83%;
+    width: 95%;
+    height: 80vh;
     align-items: center;
     text-align: center;
     justify-content: center;
