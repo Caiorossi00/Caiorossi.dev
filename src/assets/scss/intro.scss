@@ -3,12 +3,13 @@
   flex-direction: column;
   gap: 7px;
   height: fit-content;
-  width: 100%;
   padding-top: 45px;
+  width: 550px;
 
   h1 {
     font-size: 36px;
     letter-spacing: -2px;
+    width: fit-content;
   }
 
   p {
