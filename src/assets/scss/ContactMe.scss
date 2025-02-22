@@ -1,0 +1,99 @@
+.contactMe {
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+
+  h1 {
+    font-size: 88px;
+    letter-spacing: -5px;
+  }
+
+  .contactMeBtns {
+    display: flex;
+    align-self: flex-end;
+    gap: 10px;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(0, 0, 0);
+      border: 1px solid #999999;
+      padding: 1em 2em;
+      border-radius: 12px;
+      color: white;
+      font-family: inherit;
+      cursor: pointer;
+      font-size: 16px;
+      min-width: 120px;
+      text-decoration: none;
+      letter-spacing: -1px;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+
+    .CM-instagram {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      position: relative;
+      background: transparent;
+      cursor: pointer;
+      border-radius: 12px;
+      border: none;
+      overflow: hidden;
+      align-items: center;
+
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        padding: 2px;
+        border-radius: inherit;
+        background: linear-gradient(
+          45deg,
+          #f09433,
+          #e6683c,
+          #dc2743,
+          #cc2366,
+          #bc1888
+        );
+        -webkit-mask: linear-gradient(white, white) content-box,
+          linear-gradient(white, white);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+      }
+
+      &:hover {
+        border: 1px solid white;
+        background: linear-gradient(
+          45deg,
+          #f09433,
+          #e6683c,
+          #dc2743,
+          #cc2366,
+          #bc1888
+        );
+        color: white;
+      }
+    }
+
+    .CM-whatsapp {
+      border: 1px solid #4ce6a6;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: black;
+        border: 1px solid white;
+        background: #4ce6a6;
+      }
+    }
+  }
+}
