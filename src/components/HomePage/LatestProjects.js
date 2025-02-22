@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../assets/scss/LatestProjects.scss";
+import "../../assets/scss/LatestProjects.scss";
 
 const LatestProjects = () => {
   return (
