@@ -1,0 +1,80 @@
+.LatestProjects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  h1 {
+    font-size: 22px;
+  }
+}
+
+.container-latestProjects {
+  display: flex;
+  gap: 20px;
+
+  .latestProject-item {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    p {
+      color: #4ce6a6;
+      font-size: 12px;
+      font-weight: 400;
+      margin: 5px 0;
+      letter-spacing: -0.4px;
+    }
+
+    .LP-item-goto {
+      display: flex;
+      justify-content: space-between;
+
+      .LP-project-name {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+
+    .LP-description {
+      color: #999999;
+      font-weight: 400;
+      letter-spacing: -0.4px;
+      width: 80%;
+      font-size: 16px;
+    }
+  }
+}
+
+.fa-right-from-bracket {
+  color: #4ce6a6;
+  margin-right: 10px;
+  font-size: small;
+}
+
+.LP-seeMore {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid #999999;
+  padding: 1em 2em;
+  border-radius: 12px;
+  color: white;
+  width: fit-content;
+  align-self: flex-end;
+  font-family: inherit;
+  margin-top: 40px;
+  cursor: pointer;
+  font-weight: bold;
+
+  .fa-eye {
+    margin-top: 1px;
+    color: #4ce6a6;
+  }
+}
