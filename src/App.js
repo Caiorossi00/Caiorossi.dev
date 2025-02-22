@@ -1,6 +1,7 @@
 import "../src/assets/scss/reset.scss";
 import "../src/assets/scss/variables.scss";
 import "./App.css";
+import Footer from "./components/Footer";
 import Sidebar from "./components/Sidebar";
 import HomePage from "./routes/HomePage";
 

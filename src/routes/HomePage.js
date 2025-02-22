@@ -4,6 +4,7 @@ import LatestProjects from "../components/HomePage/LatestProjects";
 import "../assets/scss/HomePage.scss";
 import ClientsFeedback from "../components/HomePage/ClientsFeedback";
 import ContactMe from "../components/HomePage/ContactMe";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <LatestProjects />
       <ClientsFeedback />
       <ContactMe />
+      <Footer />
     </div>
   );
 };
