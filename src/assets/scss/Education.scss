@@ -1,0 +1,86 @@
+.education-container {
+  color: #fff;
+  border-radius: 10px;
+
+  h2 {
+    font-size: 2em;
+    letter-spacing: -2px;
+  }
+
+  .tabs {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 15px;
+
+    .tab-button {
+      background: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+      letter-spacing: -1px;
+
+      &.active {
+        background: #4ce6a6;
+        color: black;
+      }
+
+      &:hover {
+        color: white;
+        background: #999999;
+      }
+    }
+  }
+
+  .education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .education-item {
+      display: flex;
+      background: #222;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+      .education-title-and-period {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 500px;
+      }
+
+      .education-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        margin-right: 15px;
+      }
+
+      h3 {
+        margin: 0;
+        font-size: 1.2rem;
+        color: #4ce6a6;
+      }
+
+      .institution {
+        font-size: 0.9rem;
+      }
+
+      .description {
+        font-size: 0.9rem;
+        margin-top: 5px;
+        width: 70%;
+        margin-left: 2px;
+        color: #999999;
+      }
+
+      small {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

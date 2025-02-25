@@ -10,3 +10,11 @@
   gap: 70px;
   justify-content: center;
 }
+
+.main-content {
+  padding-top: 40px;
+}
+
+button {
+  font-family: inherit;
+}

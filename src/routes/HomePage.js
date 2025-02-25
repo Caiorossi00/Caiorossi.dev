@@ -1,10 +1,10 @@
 import React from "react";
-import Intro from "../components/HomePage/Intro";
+import Intro from "../components/Intro";
 import LatestProjects from "../components/HomePage/LatestProjects";
-import "../assets/scss/HomePage.scss";
 import ClientsFeedback from "../components/HomePage/ClientsFeedback";
-import ContactMe from "../components/HomePage/ContactMe";
+import ContactMe from "../components/ContactMe";
 import Footer from "../components/Footer";
+import "../assets/scss/HomePage.scss";
 
 const HomePage = () => {
   return (
