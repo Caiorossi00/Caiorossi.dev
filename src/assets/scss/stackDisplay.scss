@@ -1,0 +1,46 @@
+.stack-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 20vh;
+}
+
+.stack-item {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 255px;
+
+  .stack-icon-and-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    h3 {
+      font-size: 12px;
+      color: #000000;
+      margin-top: -10px;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  i {
+    font-size: 25px;
+    color: #ff6600;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #666;
+  }
+}

@@ -5,7 +5,7 @@ import Sidebar from "./components/Sidebar";
 import AboutMe from "./routes/AboutMe";
 import HomePage from "./routes/HomePage";
 // import Projects from "./routes/Projects";
-// import Stack from "./routes/Stack";
+import Stack from "./routes/Stack";
 // import Contact from "./routes/Contact";
 
 function App() {
@@ -19,8 +19,8 @@ function App() {
         return <AboutMe />;
       // case "projects":
       //   return <Projects />;
-      // case "stack":
-      //   return <Stack />;
+      case "stack":
+        return <Stack />;
       // case "contact":
       //   return <Contact />;
       default:
