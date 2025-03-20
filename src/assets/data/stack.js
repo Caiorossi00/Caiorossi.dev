@@ -1,5 +1,4 @@
 const stackItens = [
-  // Frontend
   {
     id: 1,
     name: "HTML5",
@@ -49,7 +48,6 @@ const stackItens = [
     level: "Intermediário",
   },
 
-  // Backend
   {
     id: 7,
     name: "Node.js",
@@ -90,8 +88,6 @@ const stackItens = [
     category: "Backend",
     level: "Iniciante",
   },
-
-  // Design
   {
     id: 12,
     name: "Design",
@@ -125,7 +121,6 @@ const stackItens = [
     level: "Avançado",
   },
 
-  // Ferramentas
   {
     id: 16,
     name: "Git",

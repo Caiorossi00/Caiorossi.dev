@@ -1,10 +1,22 @@
 const education = {
+  especialização: [
+    {
+      id: 1,
+      title: "Pós graduação em desenvolvimento Full-Stack",
+      image:
+        "https://media.licdn.com/dms/image/v2/C4D0BAQH1QLryW1IEFQ/company-logo_200_200/company-logo_200_200/0/1630552069493/faculdade_descomplica_logo?e=2147483647&v=beta&t=IPOyKwp6f8nG71Hdh_UO6_zoQrR5OghZynMFhQ1V4e4",
+      institution: "Descomplica",
+      description:
+        "Curso voltado para desenvolvimento de software e arquitetura de sistemas.",
+      period: "2024 - Cursando",
+    },
+  ],
   faculdades: [
     {
       id: 1,
       title: "Análise e Desenvolvimento de Sistemas",
       image:
-        "https://yt3.googleusercontent.com/ePSk6ZiX6moJ0zZiA8LdBTF4_qQOO-tvSlMeK7l_7ik2_wREl9sPTq9pNBUxX2tDzkaouoXakw=s900-c-k-c0x00ffffff-no-rj",
+        "https://media.licdn.com/dms/image/v2/C4D0BAQH1QLryW1IEFQ/company-logo_200_200/company-logo_200_200/0/1630552069493/faculdade_descomplica_logo?e=2147483647&v=beta&t=IPOyKwp6f8nG71Hdh_UO6_zoQrR5OghZynMFhQ1V4e4",
       institution: "Descomplica",
       description:
         "Curso voltado para desenvolvimento de software e arquitetura de sistemas.",
@@ -14,7 +26,7 @@ const education = {
       id: 2,
       title: "Turismo",
       image:
-        "https://scontent.frvy1-1.fna.fbcdn.net/v/t39.30808-6/341264624_759268989084575_5196524846025271911_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHRK3hlrVEVu4mmiAzC0RhrxtQaSGeLHnXG1BpIZ4seddHuP6AbBu2hQ6iCA3TSl8Ye5JfHAP_16VWR4PU-5btU&_nc_ohc=R0j-q1kLFOUQ7kNvgGKfIDI&_nc_oc=AdhbHYxDGZP2H3P_PawYF7yM9nBh7DLP95MirGK2JLn-7wVpR3NZehY28NR0F2xdRAo&_nc_zt=23&_nc_ht=scontent.frvy1-1.fna&_nc_gid=AA_J-4EagGDyidr0-vCDOo9&oh=00_AYDiipBrf5NJn7NyZqCuZVqkPaZ9hgeMONMMYxMRFFlWyQ&oe=67C38B0A",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ0sk-loli7zvkHx8ZxyX5o513B4uAiQDrbg&s",
       institution: "Unipampa",
       description:
         "Curso voltado para a gestão e planejamento de atividades turísticas, com foco em hospitalidade, eventos e desenvolvimento sustentável de destinos.",
