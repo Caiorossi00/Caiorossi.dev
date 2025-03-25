@@ -4,12 +4,20 @@ import "../../assets/scss/stackDisplay.scss";
 
 const categories = ["Frontend", "Backend", "Design", "Ferramentas"];
 
+const levelToStars = (level) => {
+  const stars = {
+    Avançado: "★★★★★",
+    Intermediário: "★★★☆☆",
+    Iniciante: "★★☆☆☆",
+  };
+  return stars[level] || "☆☆☆☆☆";
+};
+
 const StackDisplay = () => {
   const [activeCategory, setActiveCategory] = useState("Frontend");
 
   return (
     <div className="stack-container">
-      {/* Abas de categoria */}
       <div className="stack-tabs">
         {categories.map((category) => (
           <button
@@ -22,17 +30,18 @@ const StackDisplay = () => {
         ))}
       </div>
 
-      {/* Itens filtrados pela categoria ativa */}
       <div className="stack-items">
         {stackItens
           .filter((item) => item.category === activeCategory)
           .map((item) => (
             <div key={item.id} className="stack-item">
-              <div className="stack-icon-and-name">
+              <div className="item-left-itens">
                 <i className={item.icon}></i>
-                <h3>{item.name}</h3>
+                <div className="stack-icon-and-description">
+                  <h3>{item.name}</h3> <p>{item.description}</p>
+                </div>
               </div>
-              <p>{item.description}</p>
+              <div className="stack-stars">{levelToStars(item.level)}</div>
             </div>
           ))}
       </div>

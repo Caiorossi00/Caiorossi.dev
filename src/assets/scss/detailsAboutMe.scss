@@ -4,11 +4,10 @@
   color: black;
   padding: 2.5em 3em;
   border-radius: 4px;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, color 0.3s ease-in-out;
 
   &:hover {
-    background-color: #2d2d2d;
-    color: #2be092;
+    transform: scale(1.04);
   }
 
   h2 {
