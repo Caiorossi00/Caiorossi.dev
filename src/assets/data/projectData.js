@@ -1,5 +1,5 @@
 const projectData = {
-  name: "Nome Projeto",
+  name: "Projeto",
   description:
     "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...",
   technicalDetails: [
