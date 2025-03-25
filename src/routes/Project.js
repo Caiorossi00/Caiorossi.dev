@@ -2,59 +2,69 @@ import React, { useState } from "react";
 import "../assets/scss/Project.scss";
 import ProjectNavbar from "../components/Project/ProjectNavbar";
 
+const projectData = {
+  name: "Nome Projeto",
+  description:
+    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...",
+  technicalDetails: [
+    { label: "Client", value: "Caio Rossi" },
+    { label: "Ano", value: "2024" },
+    { label: "Categoria", value: "Landing Page" },
+    {
+      label: "Tecnologias",
+      value: [
+        { name: "React", icon: "devicon-react-original colored" },
+        { name: "Sass", icon: "devicon-sass-original colored" },
+        { name: "PostgreSQL", icon: "devicon-postgresql-plain colored" },
+      ],
+    },
+  ],
+  starDetails: [
+    {
+      title: "Situação",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+  ],
+  images: [
+    "https://images.unsplash.com/photo-1554668048-5055c5654bbc?q=80&w=2070&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1554668048-5055c5654bbc?q=80&w=2070&auto=format&fit=crop",
+  ],
+};
+
 const Project = ({ setActivePage }) => {
   const [isStarExpanded, setIsStarExpanded] = useState(false);
-
-  const toggleStarExpansion = () => {
-    setIsStarExpanded((prevState) => !prevState);
-  };
+  const toggleStarExpansion = () => setIsStarExpanded(!isStarExpanded);
 
   return (
     <div id="project-details">
       <ProjectNavbar setActivePage={setActivePage} />
       <div className="project-details">
-        <h1>Nome Projeto</h1>
+        <h1>{projectData.name}</h1>
 
         <div className="container-infos-project">
           <div className="description">
             <h4>Description</h4>
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus
-              error sit voluptatem accusantium doloremque laudantium, totam rem
-              aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-              architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis
-              unde omnis iste natus error sit voluptatem accusantium doloremque
-              laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-              veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            </p>
+            <p>{projectData.description}</p>
           </div>
 
           <div className="technical-details">
-            <div>
-              <h5>Client</h5>
-              <p className="p-details">Caio Rossi</p>
-            </div>
-            <div>
-              <h5>Ano</h5>
-              <p className="p-details">2024</p>
-            </div>
-            <div>
-              <h5>Categoria</h5>
-              <p className="p-details">Landing Page</p>
-            </div>
-            <div>
-              <h5>Tecnologias</h5>
-              <p className="p-details">
-                <div className="icons-project-details">
-                  <i className="devicon-react-original colored"></i>
-                  <i className="devicon-sass-original colored"></i>
-                  <i className="devicon-postgresql-plain colored"></i>
-                </div>
-              </p>
-            </div>
+            {projectData.technicalDetails.map((detail, index) => (
+              <div key={index}>
+                <h5>{detail.label}</h5>
+                <p className="p-details">
+                  {Array.isArray(detail.value) ? (
+                    <div className="icons-project-details">
+                      {detail.value.map((tech, i) => (
+                        <i key={i} className={tech.icon}></i>
+                      ))}
+                    </div>
+                  ) : (
+                    detail.value
+                  )}
+                </p>
+              </div>
+            ))}
+
             <div className="star-section">
               <h5 className="star-toggle" onClick={toggleStarExpansion}>
                 STAR
@@ -66,14 +76,12 @@ const Project = ({ setActivePage }) => {
               </h5>
               {isStarExpanded && (
                 <div className="star-details">
-                  <div>
-                    <h6>Situação:</h6>
-                    <p className="star-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                  </div>
+                  {projectData.starDetails.map((detail, index) => (
+                    <div key={index}>
+                      <h6>{detail.title}:</h6>
+                      <p className="star-text">{detail.text}</p>
+                    </div>
+                  ))}
                 </div>
               )}
             </div>
@@ -83,16 +91,14 @@ const Project = ({ setActivePage }) => {
         <div className="container-pics-project">
           <h1>Imagens</h1>
           <div className="first-row-project">
-            <img
-              src="https://images.unsplash.com/photo-1554668048-5055c5654bbc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="lorem"
-              className="first-img"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1554668048-5055c5654bbc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              className="second-img"
-              alt="lorem"
-            />
+            {projectData.images.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`Imagem ${index + 1}`}
+                className={index === 0 ? "first-img" : "second-img"}
+              />
+            ))}
           </div>
         </div>
       </div>
