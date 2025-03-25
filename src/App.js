@@ -7,6 +7,7 @@ import HomePage from "./routes/HomePage";
 // import Projects from "./routes/Projects";
 import Stack from "./routes/Stack";
 // import Contact from "./routes/Contact";
+import Project from "./routes/Project";
 
 function App() {
   const [activePage, setActivePage] = useState("home");
@@ -17,8 +18,8 @@ function App() {
         return <HomePage />;
       case "about":
         return <AboutMe />;
-      // case "projects":
-      //   return <Projects />;
+      case "project":
+        return <Project setActivePage={setActivePage} />;
       case "stack":
         return <Stack />;
       // case "contact":
@@ -30,7 +31,7 @@ function App() {
 
   return (
     <div className="App">
-      <Sidebar setActivePage={setActivePage} />
+      {activePage !== "project" && <Sidebar setActivePage={setActivePage} />}
       <div className="main-content">{renderPage()}</div>
     </div>
   );

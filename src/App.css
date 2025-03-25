@@ -5,14 +5,8 @@
   font-family: "Inter", sans-serif;
   letter-spacing: -1px;
   color: white;
-  padding-top: 40px;
-  padding-left: 30px;
   gap: 80px;
   justify-content: center;
-}
-
-.main-content {
-  padding-top: 40px;
 }
 
 button {

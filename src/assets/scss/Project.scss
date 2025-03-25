@@ -1,0 +1,93 @@
+#project-details {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.project-details {
+  padding-left: 5vw;
+  padding-top: 8vh;
+
+  h1 {
+    font-size: 4em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: -3px;
+    margin-bottom: 6vh;
+  }
+
+  .container-infos-project {
+    display: flex;
+    justify-content: space-between;
+
+    .description {
+      width: 35%;
+      text-align: justify;
+
+      h4 {
+        color: #b3b3b3;
+      }
+    }
+
+    .technical-details {
+      display: flex;
+      flex-direction: column;
+      gap: 5vh;
+      width: 45%;
+
+      div {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #333333;
+
+        h5 {
+          color: #b3b3b3;
+        }
+
+        .p-details {
+          text-align: start;
+          margin-bottom: 12px;
+          padding-right: 10vw;
+          min-width: 8vw;
+          max-width: 8vw;
+          margin-right: 3vw;
+        }
+
+        .icons-project-details {
+          display: flex;
+          border: none;
+          align-items: center;
+          justify-content: start;
+          gap: 15px;
+          margin-top: -7px;
+
+          i {
+            font-size: 1.8em;
+          }
+        }
+      }
+    }
+  }
+}
+
+.star-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.star-toggle {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3vh;
+  margin-top: -2vh;
+}
+
+.star-details {
+  justify-content: flex-start;
+  gap: 12px;
+
+  p {
+    width: 50%;
+    margin-bottom: 2vh;
+  }
+}
