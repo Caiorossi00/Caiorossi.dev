@@ -80,14 +80,53 @@
   justify-content: space-between;
   padding-bottom: 3vh;
   margin-top: -2vh;
+  padding-right: 2vw;
 }
 
 .star-details {
-  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
   gap: 12px;
 
+  h6 {
+    color: #b3b3b3;
+  }
+
   p {
-    width: 50%;
     margin-bottom: 2vh;
+  }
+}
+
+.star-text {
+  text-wrap: wrap;
+  padding-right: 5vw;
+  text-align: justify;
+  padding-left: 10vw;
+}
+
+.container-pics-project {
+  margin-top: 15vh;
+  margin-bottom: 10vh;
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 1vh;
+  }
+
+  img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .first-row-project {
+    width: 90%;
+    display: flex;
+    gap: 3vw;
+
+    .second-img {
+      width: 400px;
+    }
   }
 }

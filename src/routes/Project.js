@@ -3,7 +3,6 @@ import "../assets/scss/Project.scss";
 import ProjectNavbar from "../components/Project/ProjectNavbar";
 
 const Project = ({ setActivePage }) => {
-  // Recebendo a função
   const [isStarExpanded, setIsStarExpanded] = useState(false);
 
   const toggleStarExpansion = () => {
@@ -12,7 +11,7 @@ const Project = ({ setActivePage }) => {
 
   return (
     <div id="project-details">
-      <ProjectNavbar setActivePage={setActivePage} /> {/* Passando a função */}
+      <ProjectNavbar setActivePage={setActivePage} />
       <div className="project-details">
         <h1>Nome Projeto</h1>
 
@@ -67,11 +66,33 @@ const Project = ({ setActivePage }) => {
               </h5>
               {isStarExpanded && (
                 <div className="star-details">
-                  <h6>Situação</h6>
-                  <p className="star-text">Em andamento</p>
+                  <div>
+                    <h6>Situação:</h6>
+                    <p className="star-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                  </div>
                 </div>
               )}
             </div>
+          </div>
+        </div>
+
+        <div className="container-pics-project">
+          <h1>Imagens</h1>
+          <div className="first-row-project">
+            <img
+              src="https://images.unsplash.com/photo-1554668048-5055c5654bbc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="lorem"
+              className="first-img"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1554668048-5055c5654bbc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              className="second-img"
+              alt="lorem"
+            />
           </div>
         </div>
       </div>
