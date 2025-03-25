@@ -1,6 +1,7 @@
 #Stack {
   display: flex;
   flex-direction: column;
-  max-width: 600px;
   gap: 80px;
+  max-width: 600px;
+  min-height: 100vh;
 }
