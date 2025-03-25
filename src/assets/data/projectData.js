@@ -1,7 +1,7 @@
 const projectData = {
   name: "Projeto",
   description:
-    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...",
+    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium omnis iste natus error sit voluptatem accusantium doloremque laudantium omnis iste natus error sit voluptatem accusantium doloremque laudantium omnis iste natus error sit voluptatem accusantium doloremque laudantium ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium omnis iste natus error sit voluptatem accusantium doloremque laudantium omnis...",
   technicalDetails: [
     { label: "Client", value: "Caio Rossi" },
     { label: "Ano", value: "2024" },
