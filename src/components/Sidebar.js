@@ -41,8 +41,8 @@ const Sidebar = ({ setActivePage }) => {
           <i className="fa-solid fa-circle-user"></i> Sobre Mim
         </button>
         <button
-          className={`sidebar-item ${activeTab === "project" ? "active" : ""}`}
-          onClick={() => handleTabClick("project")}
+          className={`sidebar-item ${activeTab === "projects" ? "active" : ""}`}
+          onClick={() => handleTabClick("projects")}
         >
           <i className="fa-solid fa-briefcase"></i> Projetos
         </button>

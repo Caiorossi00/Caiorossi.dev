@@ -19,7 +19,7 @@ const ProjectNavbar = ({ setActivePage }) => {
           <button onClick={() => setActivePage("stack")}>Stack</button>
         </li>
         <li>
-          <button onClick={() => setActivePage("project")}>Project</button>
+          <button onClick={() => setActivePage("projects")}>Projects</button>
         </li>
         <li>
           <button onClick={() => setActivePage("contact")}>Contact</button>

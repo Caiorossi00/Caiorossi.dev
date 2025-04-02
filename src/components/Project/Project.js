@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "../assets/scss/Project.scss";
-import ProjectNavbar from "../components/Project/ProjectNavbar";
-import projectData from ".././assets/data/projectData";
+import "./assets/scss/Project.scss";
+import ProjectNavbar from "./ProjectNavbar";
+import projectData from "../../assets/data/projectData";
 
 const Project = ({ setActivePage }) => {
   const [isStarExpanded, setIsStarExpanded] = useState(false);
