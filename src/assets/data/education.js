@@ -7,7 +7,7 @@ const education = {
         "https://media.licdn.com/dms/image/v2/C4D0BAQH1QLryW1IEFQ/company-logo_200_200/company-logo_200_200/0/1630552069493/faculdade_descomplica_logo?e=2147483647&v=beta&t=IPOyKwp6f8nG71Hdh_UO6_zoQrR5OghZynMFhQ1V4e4",
       institution: "Descomplica",
       description:
-        "Curso voltado para desenvolvimento de software e arquitetura de sistemas.",
+        "Especialização voltada para o desenvolvimento completo de aplicações web e móveis, abrangendo tanto o frontend quanto o backend",
       period: "2024 - Cursando",
     },
   ],
@@ -40,7 +40,8 @@ const education = {
       image:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Harvard_University_shield.png/1200px-Harvard_University_shield.png",
       institution: "Harvard",
-      description: "Lorem Ipsum Simet Dolor Nostris Potem",
+      description:
+        "Curso avançado de desenvolvimento web oferecido pela Harvard, abordando conceitos como HTML, CSS, JavaScript, Django, bancos de dados e autenticação de usuários",
       period: "2023 - 2024",
     },
     {
@@ -49,7 +50,8 @@ const education = {
       image:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Harvard_University_shield.png/1200px-Harvard_University_shield.png",
       institution: "Harvard",
-      description: "Lorem Ipsum Simet Dolor Nostris Potem",
+      description:
+        "Curso introdutório de Ciência da Computação, abordando conceitos fundamentais como algoritmos, estruturas de dados, desenvolvimento de software e programação em C, Python e JavaScript.",
       period: "2023 - 2024",
     },
     {
@@ -58,7 +60,8 @@ const education = {
       image:
         "https://yt3.googleusercontent.com/THjOWzwpTUV4tBfMo330M9z7XUXcX2dvKirKb2ratI_WEmbBMCMGB8Fcg3BYJ8Ptcsy6YJsIww=s900-c-k-c0x00ffffff-no-rj",
       institution: "IFRS",
-      description: "Lorem Ipsum Simet Dolor Nostris Potem",
+      description:
+        "Curso focado em JavaScript, abordando desde os fundamentos da linguagem até conceitos avançados, incluindo manipulação do DOM, eventos, ES6+, programação assíncrona e boas práticas de desenvolvimento web.",
       period: "2024",
     },
     {
@@ -67,7 +70,8 @@ const education = {
       image:
         "https://escoladegoverno.rs.gov.br/wp-content/uploads/2024/02/Logo-Pucrs.png",
       institution: "PUCRS",
-      description: "Lorem Ipsum Simet Dolor Nostris Potem",
+      description:
+        "Curso voltado para os princípios do design centrado no usuário (UX), abordando pesquisa, usabilidade, prototipação e acessibilidade para criação de experiências digitais intuitivas e eficientes.",
       period: "2023",
     },
 
@@ -77,8 +81,9 @@ const education = {
       image:
         "https://yt3.googleusercontent.com/8Y6tB7Z7c4RLSi8Y8YwP0dlmbmWBItZGwCfW4VXcEgTIMWBoE15mVYWWtscnMr-yIZsmGgOo=s900-c-k-c0x00ffffff-no-rj",
       institution: "Alura",
-      description: "Lorem Ipsum Simet Dolor Nostris Potem",
-      period: "2023",
+      description:
+        "Curso intensivo focado em desenvolvimento back-end, abordando conceitos como APIs, bancos de dados, autenticação e arquitetura de software.",
+      period: "2024",
     },
     {
       id: 6,
@@ -86,8 +91,9 @@ const education = {
       image:
         "https://yt3.googleusercontent.com/8Y6tB7Z7c4RLSi8Y8YwP0dlmbmWBItZGwCfW4VXcEgTIMWBoE15mVYWWtscnMr-yIZsmGgOo=s900-c-k-c0x00ffffff-no-rj",
       institution: "Alura",
-      description: "Lorem Ipsum Simet Dolor Nostris Potem",
-      period: "2023",
+      description:
+        "Programa prático de desenvolvimento full stack, explorando tecnologias front-end e back-end por meio de desafios e projetos guiados",
+      period: "2024",
     },
     {
       id: 7,
@@ -95,7 +101,8 @@ const education = {
       image:
         "https://yt3.googleusercontent.com/8Y6tB7Z7c4RLSi8Y8YwP0dlmbmWBItZGwCfW4VXcEgTIMWBoE15mVYWWtscnMr-yIZsmGgOo=s900-c-k-c0x00ffffff-no-rj",
       institution: "Alura",
-      description: "Lorem Ipsum Simet Dolor Nostris Potem",
+      description:
+        "Programa prático de desenvolvimento front-end, cobrindo fundamentos de programação, lógica, estruturação de projetos e boas práticas de desenvolvimento.",
       period: "2023",
     },
     {
@@ -104,7 +111,8 @@ const education = {
       image:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Harvard_University_shield.png/1200px-Harvard_University_shield.png",
       institution: "Harvard",
-      description: "Lorem Ipsum Simet Dolor Nostris Potem",
+      description:
+        "Curso introdutório de tecnologia, cobrindo fundamentos de redes, segurança digital, computação na nuvem e outros conceitos essenciais para profissionais da área.",
       period: "2023",
     },
   ],
@@ -115,7 +123,7 @@ const education = {
       image:
         "https://www.shutterstock.com/shutterstock/videos/914281/thumb/1.jpg?ip=x480",
       institution: "Nativo",
-      description: "Lorem Ipsum Simet Dolor Nostris Potem",
+      description: "Nasci e cresci no Brasil",
       period: "",
     },
     {
@@ -124,7 +132,7 @@ const education = {
       image:
         "https://www.imlgranada.com/wp-content/uploads/2020/09/aprende-las-diferencias-entre-el-ingls-britnico-y-el-americano-1.jpg",
       institution: "C2",
-      description: "Lorem Ipsum Simet Dolor Nostris Potem",
+      description: "Estudei Inglês desde os 10 anos",
       period: "TOEFL",
     },
     {
@@ -133,7 +141,7 @@ const education = {
       image:
         "https://img.freepik.com/fotos-gratis/closeup-tiro-da-bandeira-realista-da-espanha_181624-14702.jpg",
       institution: "C1",
-      description: "Lorem Ipsum Simet Dolor Nostris Potem",
+      description: "Nasci e cresci em um município de fronteira com o Uruguai",
       period: "Instituto Cervantes",
     },
     {
@@ -142,7 +150,8 @@ const education = {
       image:
         "https://img.freepik.com/premium-photo/flag-italy-3d-illustration-italian-flag-waving_2227-632.jpg",
       institution: "B1",
-      description: "Lorem Ipsum Simet Dolor Nostris Potem",
+      description:
+        "Me interessei pelo aprendizado de idiomas e me aventurei no italiano",
       period: "EFSET",
     },
   ],
