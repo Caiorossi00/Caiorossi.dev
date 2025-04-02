@@ -28,16 +28,15 @@
     background-color: #062d1d;
     border: none;
     color: #4ce6a6;
-    padding: 3px 0;
     width: 180px;
-    border-radius: 12px;
+    border-radius: 8px;
     font-family: inherit;
-    letter-spacing: -0.3px;
+    letter-spacing: -0.4px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
     &:hover {
-      background-color: #4ce6a6;
+      background-color: #4ac97f;
       color: #ffffff;
     }
 
